@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Changed to useNavigate
+import Footer from '../Pages/Footer';
 
 // Expanded product data with unique names and more items
 const products = [
@@ -61,6 +62,7 @@ const ProductListingPage = () => {
     };
 
     return (
+      <div>
       <div className="bg-[#001F3F] py-10 px-5">
         {/* Filter and Sort Section */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
@@ -116,6 +118,8 @@ const ProductListingPage = () => {
             </div>
           ))}
         </div>
+      </div>
+      <Footer/>
       </div>
     );
   };

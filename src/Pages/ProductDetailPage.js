@@ -1,6 +1,7 @@
 // src/components/ProductDetailPage.js
 import React, { useState } from 'react';
 import { useCart } from '../Pages/CartContext'; // Import the cart context
+import Footer from '../Pages/Footer';
 
 const ProductDetailPage = () => {
   const { addToCart } = useCart(); // Use the cart context
@@ -42,6 +43,7 @@ const ProductDetailPage = () => {
 
 
   return (
+    <div>
     <div className="bg-[#001F3F] text-[#EAD8B1] p-3">
       <div className="flex flex-col lg:flex-row">
         {/* Product Images Section */}
@@ -108,6 +110,8 @@ const ProductDetailPage = () => {
           )}
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

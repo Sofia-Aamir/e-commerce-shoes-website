@@ -1,5 +1,6 @@
 // HomePage.js
 import React, { useState } from 'react';
+import Footer from '../Pages/Footer';
 
 const HomePage = () => {
   // State to store cart items
@@ -41,6 +42,7 @@ const addToCart = (item) => {
   
 
   return (
+    <div>
     <div className="bg-[#001F3F] flex flex-col items-center overflow-hidden">
       {/* Existing upper section */}
       <div className="flex items-center justify-center h-[85vh] px-5 flex-col md:flex-row">
@@ -108,7 +110,10 @@ const addToCart = (item) => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </div>
   );
+ 
 };
 
 export default HomePage;
